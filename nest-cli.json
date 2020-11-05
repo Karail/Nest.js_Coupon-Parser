@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/coupons/src/v1",
+  "monorepo": true,
+  "root": "apps/coupons",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/coupons/tsconfig.app.json"
+  },
+  "projects": {
+    "coupons": {
+      "type": "application",
+      "root": "apps/coupons",
+      "entryFile": "main",
+      "sourceRoot": "apps/coupons/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/coupons/tsconfig.app.json"
+      }
+    },
+    "decode-deep-link": {
+      "type": "application",
+      "root": "apps/decode-deep-link",
+      "entryFile": "main",
+      "sourceRoot": "apps/decode-deep-link/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/decode-deep-link/tsconfig.app.json"
+      }
+    }
+  }
+}

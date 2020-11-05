@@ -1,0 +1,1 @@
+export { getCouponTypes, getCouponFileds } from './coupon-detect.util';
